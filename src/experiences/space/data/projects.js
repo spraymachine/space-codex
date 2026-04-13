@@ -1,0 +1,98 @@
+export const projects = [
+  {
+    id: 'nebula-dashboard',
+    name: 'Nebula Dashboard',
+    description:
+      'A live analytics cockpit that turns streaming product data into cinematic decision-making views.',
+    screenshot: null,
+    techStack: ['React', 'Node.js', 'D3', 'WebSocket'],
+    liveUrl: '#',
+    githubUrl: '#',
+    orbitRadius: 1.0,
+    color: '#4B9CD3',
+  },
+  {
+    id: 'stellar-commerce',
+    name: 'Stellar Commerce',
+    description:
+      'A premium storefront with fast edge rendering, polished checkout flows, and rich merchandising tools.',
+    screenshot: null,
+    techStack: ['Next.js', 'Stripe', 'PostgreSQL', 'Tailwind'],
+    liveUrl: '#',
+    githubUrl: '#',
+    orbitRadius: 1.2,
+    color: '#C88B3A',
+  },
+  {
+    id: 'cosmos-chat',
+    name: 'Cosmos Chat',
+    description:
+      'A real-time collaboration app built for teams that need rooms, presence, media uploads, and speed.',
+    screenshot: null,
+    techStack: ['React', 'Socket.IO', 'MongoDB', 'Express'],
+    liveUrl: '#',
+    githubUrl: '#',
+    orbitRadius: 1.4,
+    color: '#73C2BE',
+  },
+  {
+    id: 'orbit-cms',
+    name: 'Orbit CMS',
+    description:
+      'A composable content platform with schema-driven editing, preview workflows, and API-first delivery.',
+    screenshot: null,
+    techStack: ['Next.js', 'GraphQL', 'PostgreSQL', 'Docker'],
+    liveUrl: '#',
+    githubUrl: '#',
+    orbitRadius: 1.6,
+    color: '#B794F6',
+  },
+  {
+    id: 'pulsar-tasks',
+    name: 'Pulsar Tasks',
+    description:
+      'A workflow hub with kanban planning, team collaboration, and time-aware productivity insights.',
+    screenshot: null,
+    techStack: ['React', 'Node.js', 'Redis', 'PostgreSQL'],
+    liveUrl: '#',
+    githubUrl: '#',
+    orbitRadius: 1.1,
+    color: '#FFD700',
+  },
+  {
+    id: 'quasar-auth',
+    name: 'Quasar Auth',
+    description:
+      'A hardened authentication service covering OAuth, MFA, sessions, and internal admin tooling.',
+    screenshot: null,
+    techStack: ['Node.js', 'JWT', 'Redis', 'Docker'],
+    liveUrl: '#',
+    githubUrl: '#',
+    orbitRadius: 1.35,
+    color: '#C1440E',
+  },
+  {
+    id: 'nova-weather',
+    name: 'Nova Weather',
+    description:
+      'A weather experience with animated forecasting, location intelligence, and crisp responsive UX.',
+    screenshot: null,
+    techStack: ['React', 'Weather API', 'Motion', 'Maps'],
+    liveUrl: '#',
+    githubUrl: '#',
+    orbitRadius: 1.55,
+    color: '#3D5FC4',
+  },
+  {
+    id: 'void-notes',
+    name: 'Void Notes',
+    description:
+      'A collaborative markdown workspace with offline sync, structured notes, and frictionless sharing.',
+    screenshot: null,
+    techStack: ['React', 'PouchDB', 'CouchDB', 'Tailwind'],
+    liveUrl: '#',
+    githubUrl: '#',
+    orbitRadius: 1.75,
+    color: '#EAD6A6',
+  },
+];

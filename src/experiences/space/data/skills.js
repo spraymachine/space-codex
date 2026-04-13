@@ -1,0 +1,47 @@
+export const skillCategories = [
+  {
+    name: 'Frontend Systems',
+    accent: 'var(--earth-blue)',
+    logo: 'frontend',
+    logoLabel: 'Frontend Systems',
+    summary: 'Interfaces that feel refined, performant, and alive.',
+    skills: [
+      { name: 'React', level: 92 },
+      { name: 'Next.js', level: 87 },
+      { name: 'TypeScript', level: 84 },
+      { name: 'Tailwind CSS', level: 90 },
+      { name: 'Three.js', level: 76 },
+      { name: 'GSAP', level: 83 },
+    ],
+  },
+  {
+    name: 'Backend Craft',
+    accent: 'var(--nebula-purple)',
+    logo: 'backend',
+    logoLabel: 'Backend Craft',
+    summary: 'Reliable APIs, data models, and integration-heavy products.',
+    skills: [
+      { name: 'Node.js', level: 86 },
+      { name: 'Express', level: 84 },
+      { name: 'PostgreSQL', level: 78 },
+      { name: 'MongoDB', level: 72 },
+      { name: 'GraphQL', level: 68 },
+      { name: 'REST Design', level: 88 },
+    ],
+  },
+  {
+    name: 'Tooling & Delivery',
+    accent: 'var(--uranus-teal)',
+    logo: 'delivery',
+    logoLabel: 'Tooling & Delivery',
+    summary: 'Workflows that keep teams fast without sacrificing confidence.',
+    skills: [
+      { name: 'Git', level: 92 },
+      { name: 'Docker', level: 74 },
+      { name: 'CI/CD', level: 76 },
+      { name: 'Vercel', level: 88 },
+      { name: 'Figma', level: 78 },
+      { name: 'Performance Audits', level: 81 },
+    ],
+  },
+];

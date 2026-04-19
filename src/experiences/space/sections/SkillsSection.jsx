@@ -48,16 +48,16 @@ export default function SkillsSection() {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         '.skills-card',
-        { opacity: 0, y: 36 },
+        { opacity: 0, y: 28 },
         {
           opacity: 1,
           y: 0,
-          duration: 0.7,
-          stagger: 0.12,
+          duration: 0.65,
+          stagger: 0.08,
           ease: 'power2.out',
           scrollTrigger: {
             trigger: sectionRef.current,
-            start: 'top 72%',
+            start: 'top 74%',
             toggleActions: 'play none none reverse',
           },
         }
@@ -69,17 +69,13 @@ export default function SkillsSection() {
 
   return (
     <section ref={sectionRef} className="space-section" id="skills" aria-label="Skills">
-      <div className="section-shell">
+      <div className="section-shell orbital-copy-shell">
         <div className="section-head">
           <p className="eyebrow" style={{ color: 'var(--jupiter-amber)' }}>
             Jupiter / Skills
           </p>
-          <h2>Built for breadth without losing sharpness.</h2>
-          <p>
-            The largest planet maps to the widest part of the stack. This is
-            where interface craft, backend fluency, and delivery rigor sit in
-            the same orbit.
-          </p>
+          <h2>Clear core stack.</h2>
+          <p>Just the tools that actually shape the work.</p>
         </div>
 
         <div className="skills-category-grid">
@@ -113,44 +109,10 @@ export default function SkillsSection() {
                   {category.name}
                 </p>
               </div>
-              <p
-                style={{
-                  margin: '0 0 1.05rem',
-                  color: 'var(--text-dim)',
-                  lineHeight: 1.65,
-                }}
-              >
-                {category.summary}
-              </p>
-
-              <div style={{ display: 'grid', gap: '0.95rem' }}>
+              <p className="skills-summary">{category.summary}</p>
+              <div className="skills-pill-row">
                 {category.skills.map((skill) => (
-                  <div key={skill.name}>
-                    <div
-                      style={{
-                        display: 'flex',
-                        justifyContent: 'space-between',
-                        alignItems: 'center',
-                        gap: '1rem',
-                      }}
-                    >
-                      <SkillPill name={skill.name} accent={category.accent} />
-                      <span
-                        className="font-mono"
-                        style={{ color: 'var(--text-dim)', fontSize: '0.74rem' }}
-                      >
-                        {skill.level}%
-                      </span>
-                    </div>
-                    <div className="skill-bar" aria-hidden="true">
-                      <span
-                        style={{
-                          width: `${skill.level}%`,
-                          background: `linear-gradient(90deg, ${category.accent}, rgba(255,255,255,0.72))`,
-                        }}
-                      />
-                    </div>
-                  </div>
+                  <SkillPill key={skill.name} name={skill.name} accent={category.accent} />
                 ))}
               </div>
             </GlassCard>

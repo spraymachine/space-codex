@@ -108,7 +108,7 @@ export default function ContactSection() {
 
   return (
     <section ref={sectionRef} className="space-section" id="contact" aria-label="Contact">
-      <div className="section-shell" style={{ position: 'relative' }}>
+      <div className="section-shell orbital-copy-shell contact-shell" style={{ position: 'relative' }}>
         {signalActive && (
           <div
             aria-hidden="true"
@@ -131,11 +131,7 @@ export default function ContactSection() {
           <p className="eyebrow" style={{ color: 'var(--neptune-blue)' }}>
             Neptune / Contact
           </p>
-          <h2>Send a signal into deep space.</h2>
-          <p>
-            The portfolio ends at the edge of the solar system. If the work
-            feels like the right fit, this is where the next mission begins.
-          </p>
+          <h2>Send the next signal.</h2>
         </div>
 
         <div className="two-column-grid">
@@ -146,13 +142,6 @@ export default function ContactSection() {
           <div style={{ display: 'grid', gap: '1rem' }}>
             <GlassCard accent="var(--neptune-blue)" className="contact-animate">
               <p className="eyebrow">Resume</p>
-              <h3 style={{ margin: '0.7rem 0 0.6rem', fontSize: '1.5rem' }}>
-                Download placeholder packet
-              </h3>
-              <p style={{ margin: 0, lineHeight: 1.8, color: 'var(--text-dim)' }}>
-                A placeholder PDF is included now so the portfolio flow is
-                complete and ready for real content later.
-              </p>
               <div style={{ marginTop: '1rem' }}>
                 <a className="outline-button" href={about.resumeUrl} download>
                   Download Resume
@@ -162,10 +151,6 @@ export default function ContactSection() {
 
             <GlassCard accent="var(--neptune-blue)" className="contact-animate">
               <p className="eyebrow">Socials</p>
-              <p style={{ margin: '0.8rem 0 0', color: 'var(--text-dim)', lineHeight: 1.8 }}>
-                Placeholder destinations are wired into the UI, ready to be
-                swapped with your live profiles.
-              </p>
               <div className="contact-socials">
                 {about.socials.map((social) => (
                   <a

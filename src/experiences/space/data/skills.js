@@ -4,7 +4,7 @@ export const skillCategories = [
     accent: 'var(--earth-blue)',
     logo: 'frontend',
     logoLabel: 'Frontend Systems',
-    summary: 'Interfaces that feel refined, performant, and alive.',
+    summary: 'Refined interfaces with motion and speed.',
     skills: [
       { name: 'React', level: 92 },
       { name: 'Next.js', level: 87 },
@@ -19,7 +19,7 @@ export const skillCategories = [
     accent: 'var(--nebula-purple)',
     logo: 'backend',
     logoLabel: 'Backend Craft',
-    summary: 'Reliable APIs, data models, and integration-heavy products.',
+    summary: 'APIs and systems that stay clean under load.',
     skills: [
       { name: 'Node.js', level: 86 },
       { name: 'Express', level: 84 },
@@ -34,7 +34,7 @@ export const skillCategories = [
     accent: 'var(--uranus-teal)',
     logo: 'delivery',
     logoLabel: 'Tooling & Delivery',
-    summary: 'Workflows that keep teams fast without sacrificing confidence.',
+    summary: 'Shipping discipline, tooling, and polish.',
     skills: [
       { name: 'Git', level: 92 },
       { name: 'Docker', level: 74 },

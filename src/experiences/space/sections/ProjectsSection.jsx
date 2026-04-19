@@ -118,10 +118,8 @@ export default function ProjectsSection({
           >
             Orbital works.
           </h2>
-          <p style={{ margin: 0, color: 'var(--text-dim)', lineHeight: 1.7 }}>
-            Saturn is the centerpiece: a pinned interaction zone where the work
-            becomes spatial, the labels float, and the portfolio feels less like
-            a page than a guided observation deck.
+          <p style={{ margin: 0, color: 'var(--text-dim)', lineHeight: 1.7, maxWidth: '18rem' }}>
+            Drag the ring. Select a mission. Scroll onward.
           </p>
         </div>
 
@@ -167,8 +165,8 @@ export default function ProjectsSection({
               }}
             >
               {reducedMotion
-                ? 'Tap a project to inspect the mission.'
-                : 'Drag to orbit. Tap a project to inspect the mission.'}
+                ? 'Tap a mission to inspect it.'
+                : 'Drag to orbit. Tap to inspect.'}
             </p>
           )}
 

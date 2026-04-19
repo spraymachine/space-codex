@@ -39,16 +39,12 @@ export default function TestimonialsSection() {
       id="testimonials"
       aria-label="Testimonials"
     >
-      <div className="section-shell">
+      <div className="section-shell orbital-copy-shell">
         <div className="section-head">
           <p className="eyebrow" style={{ color: 'var(--uranus-teal)' }}>
             Uranus / Testimonials
           </p>
-          <h2>Signals from past collaborators.</h2>
-          <p>
-            Out past Saturn, the tone shifts colder and quieter. This section
-            carries other people&apos;s words instead of mine.
-          </p>
+          <h2>Signals from collaborators.</h2>
         </div>
 
         <div style={{ display: 'grid', gap: '1rem' }}>

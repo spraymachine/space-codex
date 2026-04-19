@@ -1,13 +1,13 @@
 export const about = {
   name: 'Mani Dodla',
   title: 'Web Developer',
-  bio: 'I build immersive, high-performance web experiences that feel cinematic without losing clarity. My sweet spot lives at the intersection of front-end engineering, motion systems, and performance-minded product craft.',
+  bio: 'I build sharp, motion-led web experiences with product-level discipline.',
   story:
-    'From polished product surfaces to experimental interfaces, I like making the browser feel more alive. The goal is always the same: make something memorable, fast, and deeply usable.',
+    'Creative direction, frontend engineering, and performance all have to hold together in the same system.',
   photo: null,
   resumeUrl: '/resume-placeholder.pdf',
   location: 'India',
-  availability: 'Open to select freelance and product collaborations',
+  availability: 'Available for select collaborations',
   highlights: [
     { label: 'Years building for the web', value: '5+' },
     { label: 'Core focus', value: 'React, motion, UI systems' },

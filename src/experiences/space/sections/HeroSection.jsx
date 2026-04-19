@@ -12,105 +12,41 @@ export default function HeroSection({ ready = false }) {
 
     const animation = gsap.fromTo(
       contentRef.current.querySelectorAll('[data-hero-item]'),
-      { opacity: 0, y: 28 },
+      { opacity: 0, y: 18 },
       {
         opacity: 1,
         y: 0,
-        duration: 0.95,
-        stagger: 0.12,
+        duration: 0.8,
+        stagger: 0.08,
         ease: 'power2.out',
       }
     );
 
-    const underlayTween = gsap.to(contentRef.current, {
-      '--hero-underlay-opacity': 0,
-      ease: 'power2.out',
-      scrollTrigger: {
-        trigger: '#hero',
-        start: 'top top',
-        end: 'top+=55% top',
-        scrub: true,
-      },
-    });
-
-    return () => {
-      animation.kill();
-      underlayTween.kill();
-    };
+    return () => animation.kill();
   }, [ready]);
 
   return (
     <section className="space-section hero-shell" id="hero" aria-label="Hero">
       <div className="hero-grid">
-        <div
-          className="hero-copy-shell"
-          ref={contentRef}
-          style={{ maxWidth: '44rem', paddingTop: 'clamp(2rem, 4vh, 4rem)' }}
-        >
-          <p
-            className="eyebrow"
-            style={{ color: 'var(--earth-blue)' }}
-            data-hero-item
-          >
-            Earth Orbit / Portfolio Transmission
+        <div className="hero-copy-shell" ref={contentRef}>
+          <p className="eyebrow hero-callout" data-hero-item>
+            Earth orbit
           </p>
           <h1 className="hero-title" data-hero-item>
-            <span>Mani</span>
-            <span
-              style={{
-                background:
-                  'linear-gradient(135deg, var(--star-white) 0%, var(--earth-blue) 38%, #b3bfff 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-              }}
-            >
-              Dodla
-            </span>
+            {about.name}
           </h1>
-          <p
-            className="font-mono"
-            style={{
-              margin: 0,
-              fontSize: 'clamp(0.8rem, 1.8vw, 0.94rem)',
-              letterSpacing: '0.3em',
-              textTransform: 'uppercase',
-              color: 'var(--earth-blue)',
-            }}
-            data-hero-item
-          >
-            {about.title} / spatial web experiences
+          <p className="hero-role font-mono" data-hero-item>
+            {about.title}
           </p>
           <p className="hero-kicker" data-hero-item>
-            I design and build immersive, high-end web experiences.
+            Spatial, restrained, and built to move well.
           </p>
-          <div
-            style={{ display: 'flex', gap: '0.9rem', flexWrap: 'wrap' }}
-            data-hero-item
-          >
+          <div className="hero-action-row" data-hero-item>
             <a className="primary-button" href="#projects">
-              Explore Projects
+              Projects
             </a>
-            <a className="outline-button" href="#contact">
-              Start a Mission
-            </a>
-          </div>
-
-          <div className="hero-orbit-line" data-hero-item>
-            <span
-              className="font-mono"
-              style={{
-                fontSize: '0.68rem',
-                letterSpacing: '0.18em',
-                textTransform: 'uppercase',
-                color: 'var(--text-dim)',
-              }}
-            >
-              Scroll to leave Earth orbit
-            </span>
-            <span aria-hidden="true" />
           </div>
         </div>
-
       </div>
     </section>
   );
